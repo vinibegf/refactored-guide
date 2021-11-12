@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Início - health+</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="nav__logo"><a href="#">health<span>+</span></a></h1>
+            <button class="nav__ativador"><span class="material-icons-outlined">menu</span></button>
+            <div class="nav__dropdown">
+                <a href="#">Início</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </div>
+        </nav>
+        <div class="banner">
+
+        </div>
+    </header>
+    <!--<header>
+        <nav>
+            <h1 class="nav__logo"><a href="#">health<span>+</span></a></h1>
+            <div class="nav__ativador-container"><button class="nav__ativador"><span class="material-icons-outlined">menu</span></button></div>
+            <ul class="nav__dropdown">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            
+        </div>
+        <div class="subnav">
+            <h2 class="subnav__ativador">Vendo Artigos: <button class="subnav-botao">categoria <span class="subnav-span material-icons-outlined">expand_more</span></button></h2>
+            <ul class="subnav__dropdown">
+                <li><a href="#">novos</a></li>
+                <li><a href="#">melhores</a></li>
+                <li><a href="#">para iniciantes</a></li>
+                <li><a href="#">por categoria</a></li>
+            </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum odit velit, dolorum quo, inventore praesentium quis molestias asperiores voluptate distinctio et ipsa deleniti. Quod eum, nam suscipit totam at dolorum cumque sapiente vitae, dolorem ullam voluptatem vero? Pariatur temporibus numquam iure debitis ullam minima quibusdam ipsa reprehenderit! Molestiae quae expedita provident tempora asperiores, sed nulla earum. Ab, fugit ea, distinctio omnis explicabo libero magni reprehenderit nostrum perferendis harum aliquam excepturi soluta accusantium officiis dolorem voluptate possimus delectus natus quisquam? Animi nobis deleniti error inventore quae, et eligendi, culpa ut nisi aliquam eos reprehenderit, sequi laudantium ipsum cumque porro consequatur!</p>
+    </header>
+    <main>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80" alt="Céu estrelado" class="card__imagem">
+            <div class="card__informacoes">
+                <p>categoria: <a href="#">categoria</a></p>
+                <p>publicado em: 11/11/21</p>
+                <p>tempo de leitura: 5 minutos.</p>
+            </div>
+            <div class="card__conteudo">
+                <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, enim?
+                </h3>
+
+            </div>
+            <a href="#" class="card__link">Ler Artigo</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>-->
+    <script>
+        $(document).ready(function() {
+            $(".nav__ativador").click(function() {
+                $(".nav__dropdown").slideToggle(280);
+            });
+            $(".subnav-botao").click(function() {
+                $(".subnav__dropdown").slideToggle(280);
+                if ($(".subnav-span").text() == "expand_more")
+                    $(".subnav-span").text("expand_less");
+                else ($(".subnav-span").text("expand_more"))
+            });
+        });
+    </script>
+</body>
+</html>

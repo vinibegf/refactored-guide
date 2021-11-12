@@ -1,0 +1,205 @@
+/*==============================
+===INICIA PROPRIEDADES GERAIS===
+==============================*/
+
+:root {
+    --ff-um: "Poppins", sans-serif;
+    --ff-dois: "Raleway", sans-serif;
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: none;
+    border: none;
+    list-style: none;
+}
+
+.material-icons-outlined {
+    font-family: "Material Icons";
+}
+
+/*===============================
+===TERMINA PROPRIEDADES GERAIS===
+===============================*/
+
+/*============================
+===INICIA PROPRIEDADES BODY===
+============================*/
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    background: var(--cor-secundaria);
+    overflow:visible;
+}
+
+/*=============================
+===TERMINA PROPRIEDADES BODY===
+=============================*/
+
+/*===========================================
+===INICIA PROPRIEDADES NAV, BANNER, HEADER===
+===========================================*/
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: auto 50vh auto;
+    grid-template-areas:
+        "nav"
+        "banner"
+        "subnav"
+        "teste";
+}
+nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-rows: 3.5rem auto;
+    font-family: var(--ff-um);
+    background: var(--cor-primaria);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav__logo {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo a {
+    color: var(--cor-secundaria);
+    padding: 0.15em;
+}
+
+.nav__logo span {
+    color: var(--cor-terciaria)
+}
+
+.nav__ativador {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1.25rem;
+}
+
+.nav__dropdown {
+    grid-row: 2;
+    display: none; /*propriedade mutavel*/
+}
+
+.nav__dropdown a {
+    text-align: right;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+    margin: 1.2em 1.5rem 1.2em 0;
+    padding: 0.45em 0 0.45em 0.45em;
+    letter-spacing: 0.025rem;
+}
+
+.banner {
+    grid-area: banner;
+    background: url("https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1965&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subnav {
+    grid-area: subnav;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 3.5rem auto;
+    background: black;
+    font-family: var(--ff-um);
+    position: relative;
+}
+
+header p {
+    grid-area: teste;
+}
+
+.subnav__ativador {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0 0 0 1.25rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.subnav__ativador, .subnav__ativador * {
+    vertical-align: middle;
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+}
+
+.subnav__ativador button {
+    margin-left: 0.5em;
+}
+
+.subnav__ativador span {
+    font-size: 1.5rem;
+}
+
+.subnav__dropdown {
+    grid-row: 2;
+    grid-column: 1;
+    display: none;
+}
+
+.subnav__dropdown li {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0.8em 0 0.8em 0;
+    letter-spacing: 0.025rem;
+}
+
+.subnav__dropdown li a {
+    color: var(--cor-secundaria);
+    padding: 0.45em 0 0.45em 0.45em;
+}
+
+.card {
+    font-family: var(--ff-um);
+}
+
+.card__imagem {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card__informacoes {
+    background: var(--cor-primaria);
+}
+
+.card__informacoes > * {
+    color: var(--cor-secundaria);
+}
+
+.card__informacoes a {
+    color: var(--cor-terciaria)
+}
+
+
