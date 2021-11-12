@@ -62,7 +62,7 @@ header {
 nav {
     grid-area: nav;
     display: grid;
-    grid-template-rows: 3.5rem auto;
+    grid-template-rows: 3rem auto;
     font-family: var(--ff-um);
     background: var(--cor-primaria);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
